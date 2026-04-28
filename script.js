@@ -54,8 +54,8 @@ document.addEventListener("DOMContentLoaded", () => {
 const now = Date.now();
 const lastVisit = localStorage.getItem("lastVisited");
 if (!lastVisit || now - lastVisit > 60 * 60 * 1000) {
-  fetch("https://api.countapi.xyz/hit/coster-coding-portfolio/visits").catch(
-    () => {},
-  );
+  fetch(
+    "https://api.counterapi.dev/v1/coster-coding-portfolio/visits/up",
+  ).catch(() => {});
   localStorage.setItem("lastVisited", now);
 }
