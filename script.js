@@ -55,7 +55,7 @@ const now = Date.now();
 const lastVisit = localStorage.getItem("lastVisited");
 if (!lastVisit || now - lastVisit > 60 * 60 * 1000) {
   fetch(
-    "https://api.counterapi.dev/v1/coster-coding-portfolio/visits/up",
+    "https://api.counterapi.dev/v1/marco-devspace-portfolio/visits/up",
   ).catch(() => {});
   localStorage.setItem("lastVisited", now);
 }

@@ -35,7 +35,8 @@
         </nav>
       </header>
 
-      <main id="start">
+      <!-- HOME -->
+      <section id="start">
         <div class="hero-text">
           <h1 data-fade>
             Hi, ich bin <span class="gradient">Marco</span> - ich entwickle
@@ -49,34 +50,36 @@
             Mit Fokus auf sauberem Code und funktionierenden Ergebnissen.
           </p>
         </div>
-      </main>
+      </section>
 
       <!-- ABOUT -->
-      <section class="features" id="about">
-        <article class="feature-card" data-fade>
-          <div class="feature-icon">👋</div>
-          <div class="feature-title">Wer ich bin</div>
-          <p class="feature-text">
+      <section class="cards" id="about">
+        <article class="card" data-fade>
+          <div class="card-icon">👋</div>
+          <div class="card-title">Wer ich bin</div>
+          <!-- update years automatically -->
+          <p class="card-text">
             Ich bin Softwareentwickler, weil ich gerne Dinge erschaffe, die
             echten Nutzen haben. Seit über <span id="years"></span> Jahren
             entwickle ich deshalb moderne Webanwendungen.
           </p>
-          <div class="feature-meta">
+          <div class="card-keywords">
+            <!-- update years automatically -->
             <span><span id="yearsPlus"></span>+ Jahre Erfahrung</span>
             <span>Remote & Vor Ort</span>
           </div>
         </article>
 
-        <article class="feature-card" data-fade>
-          <div class="feature-icon">🎯</div>
-          <div class="feature-title">Was mich antreibt</div>
-          <p class="feature-text">
+        <article class="card" data-fade>
+          <div class="card-icon">🎯</div>
+          <div class="card-title">Was mich antreibt</div>
+          <p class="card-text">
             Mich motiviert das Gefühl, etwas gebaut zu haben, das wirklich
             gebraucht wird - egal ob kleines Tool oder größeres Projekt. Gute
             Software entsteht für mich dann, wenn Technik und User Experience
             zusammenpassen.
           </p>
-          <div class="feature-meta">
+          <div class="card-keywords">
             <span>Qualität im Detail</span>
             <span>Usability</span>
           </div>
@@ -84,43 +87,44 @@
       </section>
 
       <!-- SKILLS -->
-      <section class="features" id="skills">
-        <article class="feature-card" data-fade>
-          <div class="feature-icon">💻</div>
-          <div class="feature-title">Webentwicklung</div>
-          <p class="feature-text">
+      <section class="cards" id="skills">
+        <article class="card" data-fade>
+          <div class="card-icon">💻</div>
+          <div class="card-title">Webentwicklung</div>
+          <p class="card-text">
             Moderne Webentwicklung mit Fokus auf Performance, Struktur und
             sauberem Code.
           </p>
-          <div class="feature-meta">
+          <div class="card-keywords">
             <span>HTML · CSS · TS</span>
             <span>Angular · SQL</span>
           </div>
         </article>
 
-        <article class="feature-card" data-fade>
-          <div class="feature-icon">🔧</div>
-          <div class="feature-title">Tools & Workflow</div>
-          <p class="feature-text">
+        <article class="card" data-fade>
+          <div class="card-icon">🔧</div>
+          <div class="card-title">Tools & Workflow</div>
+          <p class="card-text">
             Linux und Git sind fester Bestandteil meines Workflows. Sie helfen
             mir, strukturiert zu arbeiten und Projekte sauber zu verwalten.
           </p>
-          <div class="feature-meta">
+          <div class="card-keywords">
             <span>Linux · Git</span>
             <span>Version Control</span>
           </div>
         </article>
 
-        <article class="feature-card" data-fade>
-          <div class="feature-icon">📜</div>
-          <div class="feature-title">Zertifikate</div>
-          <ul class="nice-list">
+        <article class="card" data-fade>
+          <div class="card-icon">📜</div>
+          <div class="card-title">Zertifikate</div>
+          <ul class="certificate-list">
             <li>Cambridge First Certificate 🏅</li>
             <li>ISC2 Certified in Cybersecurity (CC) ⏳</li>
           </ul>
         </article>
       </section>
 
+      <!-- CONTACT -->
       <footer class="site-footer" id="contact">
         <a
           href="https://www.linkedin.com/in/marcobeyl"
@@ -135,6 +139,7 @@
           </svg>
           <span>LinkedIn</span>
         </a>
+        <!-- update years automatically -->
         <p class="footer-text">
           © <span id="year"></span> - Portfolio von Marco
         </p>
